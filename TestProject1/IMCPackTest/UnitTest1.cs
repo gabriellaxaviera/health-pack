@@ -1,4 +1,4 @@
-namespace TestProject1
+namespace IMCPackTest
 {
     [TestClass]
     public class UnitTest1
