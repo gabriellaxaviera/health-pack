@@ -5,12 +5,14 @@ using health_calc_pack_dotnet.Enum;
 
 namespace health_calc_pack_dotnet_test.PackageTest
 {
+    [TestClass]
     public class MacroNutrientesUnitTest
     {
         [Theory]
         [InlineData(ObjetivoFisico.PerderPeso, 231, 231, 308)]
         [InlineData(ObjetivoFisico.ManterPeso, 308, 154, 308)]
         [InlineData(ObjetivoFisico.GanharPeso, 308, 77, 154)]
+        [TestMethod]
         public void CalculaMacroNutrientes_QuandoDadosValidos_EntaoRetornaMacronutrientes(ObjetivoFisico ObjetivoFisico,
             double carboidratos, double gorduras, double proteinas)
         {
