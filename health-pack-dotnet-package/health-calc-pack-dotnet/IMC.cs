@@ -4,7 +4,7 @@ namespace health_calc_pack_dotnet
 {
     public class IMC : IIMC
     {
-        public double Calc(double Height, double Weight)
+        public double Calculate(double Height, double Weight)
         {
             var Result = Math.Round(Weight / (Height * Height), 2);
             return Result;

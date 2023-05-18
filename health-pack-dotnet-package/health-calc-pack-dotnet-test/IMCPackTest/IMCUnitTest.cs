@@ -16,7 +16,7 @@ public class IMCUnitTest
         double ExpectedIMC = 24.06;
 
         //Act
-        var result = imc.Calc(Weight, Height);
+        var result = imc.Calculate(Weight, Height);
 
         //Asserts
         Assert.Equals(ExpectedIMC, result);
