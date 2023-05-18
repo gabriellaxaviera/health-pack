@@ -1,4 +1,5 @@
 ﻿using health_calc_pack_dotnet.Interfaces;
+using health_calc_pack_dotnet.Utils;
 
 namespace health_calc_pack_dotnet
 {
@@ -20,15 +21,15 @@ namespace health_calc_pack_dotnet
         {
             var Result = string.Empty;
             if (IMC < 18.5)
-                Result = "MAGREZA";
+                Result = Constants.MAGREZA;
             else if (IMC >= 18.5 && IMC < 25)
-                Result = "NORMAL";
+                Result = Constants.NORMAL;
             else if (IMC >= 25 && IMC < 30)
-                Result = "SOBREPESO";
+                Result = Constants.SOBREPESO;
             else if (IMC >= 30 && IMC < 40)
-                Result = "OBESIDADE";
+                Result = Constants.OBESIDADE;
             else if (IMC >= 40)
-                Result = "OBESIDADE GRAVE";
+                Result = Constants.OBESIDADE_GRAVE;
 
             return Result;
         }
