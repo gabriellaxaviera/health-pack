@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "health-calc-pack-dotnet", "health-calc-pack-dotnet\health-calc-pack-dotnet.csproj", "{24149766-81BB-4E45-9AE9-46274137BCB2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "health-calc-pack-dotnet", "health-calc-pack-dotnet\health-calc-pack-dotnet.csproj", "{24149766-81BB-4E45-9AE9-46274137BCB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "health-calc-pack-dotnet-console", "health-calc-pack-dotnet-console\health-calc-pack-dotnet-console.csproj", "{07F2297B-4D69-4439-B0D0-82E6710092EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "health-calc-pack-dotnet-console", "health-calc-pack-dotnet-console\health-calc-pack-dotnet-console.csproj", "{07F2297B-4D69-4439-B0D0-82E6710092EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "health-calc-pack-dotnet-test", "health-calc-pack-dotnet-test\health-calc-pack-dotnet-test.csproj", "{A56477E6-0083-41F7-AEE1-78B197B20B86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "health-calc-pack-dotnet-test", "health-dotnet-test\health-calc-pack-dotnet-test.csproj", "{F6631B62-CCD7-43B5-A40E-063074CC0C16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{07F2297B-4D69-4439-B0D0-82E6710092EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07F2297B-4D69-4439-B0D0-82E6710092EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07F2297B-4D69-4439-B0D0-82E6710092EE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A56477E6-0083-41F7-AEE1-78B197B20B86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A56477E6-0083-41F7-AEE1-78B197B20B86}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A56477E6-0083-41F7-AEE1-78B197B20B86}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A56477E6-0083-41F7-AEE1-78B197B20B86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6631B62-CCD7-43B5-A40E-063074CC0C16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6631B62-CCD7-43B5-A40E-063074CC0C16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6631B62-CCD7-43B5-A40E-063074CC0C16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6631B62-CCD7-43B5-A40E-063074CC0C16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

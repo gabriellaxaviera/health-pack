@@ -1,15 +1,12 @@
 using health_calc_pack_dotnet;
 using health_calc_pack_dotnet.Interfaces;
 using health_calc_pack_dotnet.Utils;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace health_calc_pack_dotnet_test.PackageTest
 {
-    [TestClass]
     public class IMCUnitTest
     {
         [Fact]
-        [TestMethod]
         public void CalculaIMC_QuandoDadosValidos_EntaoRetornaIndice()
         {
             //Arrange
@@ -22,11 +19,10 @@ namespace health_calc_pack_dotnet_test.PackageTest
             var result = imc.Calculate(Height, Weight);
 
             //Asserts
-            Assert.AreEqual(ExpectedIMC, result);
+            Assert.Equal(ExpectedIMC, result);
         }
 
         [Fact]
-        [TestMethod]
         public void ValidaDadosIMC_QuandoDadosInvalidos_EntaoRetornaFalso()
         {
             //Arrange
@@ -38,7 +34,7 @@ namespace health_calc_pack_dotnet_test.PackageTest
             var result = imc.IsValidData(altura, peso);
 
             //Asserts
-            Assert.IsFalse(result);
+            Assert.False(result);
         }
 
         [Theory]
@@ -47,7 +43,6 @@ namespace health_calc_pack_dotnet_test.PackageTest
         [InlineData(26, Constants.SOBREPESO)]
         [InlineData(30.55, Constants.OBESIDADE)]
         [InlineData(42, Constants.OBESIDADE_GRAVE)]
-        [TestMethod]
         public void RetornaCategoriaIMC_QuandoIndiceValido_EntaoRetornaDescricao(double valorIMC, string classificacao)
         {
             //Arrange
@@ -57,7 +52,7 @@ namespace health_calc_pack_dotnet_test.PackageTest
             string resultado = imc.GetIMCCategory(valorIMC);
 
             //Asserts
-            Assert.AreEqual(classificacao, resultado);
+            Assert.Equal(classificacao, resultado);
         }
     }
 }
