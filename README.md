@@ -9,7 +9,7 @@ Uma biblioteca que disponibiliza uma interface para cálculo do IMC e macronutri
 
 # Funcionalidades
 
-<img src='nutrition-calc-diagram.jpg' alt='Diagrama'>
+Calcular IMC e Macronutrientes
 
 # IMC
 
@@ -26,34 +26,15 @@ Classifição:
 
 # Macronutrientes
 
-Os macronutrientes serão calculados baseados nos seguintes parâmetros e regras:
-
-- Sexo
-
-  - Reduzir em 20% os resultados para sexo feminino
-
-- Peso em Kg
-
-  - O peso informado deve ser >= 35 kg
-
-- Nível de Atividade:
-
-  - Sedentário
-  - Moderadamente Ativo
-  - Bastante Ativo
-  - Extremamente Ativo
-
 - Objetivo:
 
-  - Bulking (Aumento de Peso):
+  -Aumento de Peso:
 
     - Proteína: 2g por Kg
     - Gordura: 2g por Kg
-    - Carboidrato:
-      - 4g por Kg (metabolismo lento e rotina mais cedentária)
-      - 7g por Kg (metabolismo acelerado e rotina de exercícios)
+    - Carboidrato: 4g por Kg
 
-  - Cutting (Perda de Peso)
+  - Perda de Peso
 
     - Proteína: 2g por Kg
     - Gordura: 1g por Kg
@@ -69,7 +50,7 @@ Os macronutrientes serão calculados baseados nos seguintes parâmetros e regras
 
 - Framework
 
-  - [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.403-windows-x64-installer)
+  - [.NET 7.0](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 
 - Testing
 
@@ -88,8 +69,9 @@ Após a instação:
 Criar uma nova instância das classes que darão acesso as funções:
 
 - IMC
-  - Calc (realiza o cálculo do IMC)
+  - Calculate (realiza o cálculo do IMC)
   - GetIMCCategory (Retorna a categoria de peso, dado um IMC)
 
 - Macronutriente
-  - Calc (realiza o cálculo do consumo diário de macronutrientes)
+  - CalculateMacroNutrientes (realiza o cálculo do consumo diário de macronutrientes, recebe objetivo fisico e peso)
+  - getResultForMacros (recebe um macronutrientesmodel para transformar em json)
