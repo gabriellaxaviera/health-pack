@@ -7,8 +7,13 @@ namespace health_calc_pack_dotnet
     {
         public double Calculate(double Height, double Weight)
         {
-            var Result = Math.Round(Weight / (Height * Height), 2);
-            return Result;
+            if (!IsValidData(Height, Weight))
+            {
+                return 0;
+            }
+
+            double calculo = Weight / Math.Pow(Height, 2);
+            return Math.Round(calculo, 2);
         }
 
         //IMC                 CLASSIFICAÇÃO   OBESIDADE(GRAU)
@@ -36,7 +41,7 @@ namespace health_calc_pack_dotnet
 
         public bool IsValidData(double Height, double Weight)
         {
-            return (Height < 3.0 && Weight <= 300);
+            return (Height > 0 && Height < 3.0 && Weight > 0 && Weight <= 300);
         }
     }
 }

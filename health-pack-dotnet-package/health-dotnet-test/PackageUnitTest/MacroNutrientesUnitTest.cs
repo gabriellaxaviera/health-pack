@@ -7,9 +7,9 @@ namespace health_calc_pack_dotnet_test.PackageTest
     public class MacroNutrientesUnitTest
     {
         [Theory]
-        [InlineData(ObjetivoFisico.PerderPeso, 231, 231, 308)]
-        [InlineData(ObjetivoFisico.ManterPeso, 308, 154, 308)]
-        [InlineData(ObjetivoFisico.GanharPeso, 308, 77, 154)]
+        [InlineData(ObjetivoFisico.PerderPeso, 258, 258, 344)]
+        [InlineData(ObjetivoFisico.ManterPeso, 344, 172, 344)]
+        [InlineData(ObjetivoFisico.GanharPeso, 344, 86, 172)]
         public void CalculaMacroNutrientes_QuandoDadosValidos_EntaoRetornaMacronutrientes(ObjetivoFisico ObjetivoFisico,
             double carboidratos, double gorduras, double proteinas)
         {
@@ -25,8 +25,7 @@ namespace health_calc_pack_dotnet_test.PackageTest
 
             var result = macroNutrientes.CalcularMacroNutrientes(ObjetivoFisico, Peso);
 
-
-            Assert.Equal(Expected, result);
+            Assert.Equal(macroNutrientes.getResultForMacros(Expected), macroNutrientes.getResultForMacros(result));
         }
     }
 }

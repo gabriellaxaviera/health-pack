@@ -6,5 +6,6 @@ namespace health_calc_pack_dotnet.Interfaces
     public interface IMacroNutrientes
     {
         MacroNutrientesModel CalcularMacroNutrientes(ObjetivoFisico ObjetivoFisico, double Peso);
+        string getResultForMacros(MacroNutrientesModel macroNutrientesModel);
     }
 }

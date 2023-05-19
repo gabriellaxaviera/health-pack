@@ -1,7 +1,7 @@
 ﻿using health_calc_pack_dotnet.Enum;
 using health_calc_pack_dotnet.Interfaces;
 using health_calc_pack_dotnet.Model;
-
+using System.Text.Json;
 
 namespace health_calc_pack_dotnet
 {
@@ -17,6 +17,7 @@ namespace health_calc_pack_dotnet
                     Gorduras = 3.0 * Peso,
                     Proteinas = 4.0 * Peso,
                 };
+
             }
             else if (ObjetivoFisico == ObjetivoFisico.ManterPeso)
             {
@@ -41,6 +42,11 @@ namespace health_calc_pack_dotnet
                 return new MacroNutrientesModel();
             }
 
+        }
+
+        public string getResultForMacros(MacroNutrientesModel macros)
+        {
+            return JsonSerializer.Serialize(macros);
         }
     }
 }
