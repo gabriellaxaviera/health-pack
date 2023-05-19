@@ -11,6 +11,8 @@ Uma biblioteca que disponibiliza uma interface para cálculo do IMC e macronutri
 
 Calcular IMC e Macronutrientes
 
+# Scrum Board
+[Azure scrum board](https://dev.azure.com/ProjetoIntegradoPucMinas/Calculadora%20IMC/_workitems/recentlyupdated/)
 # IMC
 
 IMC = Peso (em kg) dividido pela altura (em centímetros) ao quadrado ( peso/altura²)
