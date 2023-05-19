@@ -14,4 +14,4 @@ var resultToPerderPeso = macro.getResultForMacros(macro.CalcularMacroNutrientes(
 var resultToManterPeso = macro.getResultForMacros(macro.CalcularMacroNutrientes(ObjetivoFisico.ManterPeso, 86.0));
 var resultToGanharPeso = macro.getResultForMacros(macro.CalcularMacroNutrientes(ObjetivoFisico.GanharPeso, 86.0));
 
-Console.WriteLine($"Para ganhar peso seus macros são: {resultToGanharPeso} \n Para manter peso seus macros são: {resultToManterPeso} \n Para perder peso seus macros são: {resultToPerderPeso}");
+Console.WriteLine($"Para ganhar peso seus macros são: {resultToGanharPeso} \nPara manter peso seus macros são: {resultToManterPeso} \n Para perder peso seus macros são: {resultToPerderPeso}");
