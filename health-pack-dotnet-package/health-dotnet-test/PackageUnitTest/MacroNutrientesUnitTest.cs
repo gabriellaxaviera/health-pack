@@ -23,7 +23,7 @@ namespace health_calc_pack_dotnet_test.PackageTest
                 Proteinas = proteinas,
             };
 
-            var result = macroNutrientes.CalcularMacroNutrientes(ObjetivoFisico, Peso);
+            var result = macroNutrientes.CalculateMacroNutrientes(ObjetivoFisico, Peso);
 
             Assert.Equal(macroNutrientes.getResultForMacros(Expected), macroNutrientes.getResultForMacros(result));
         }

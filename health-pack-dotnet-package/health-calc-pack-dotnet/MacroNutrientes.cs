@@ -7,7 +7,7 @@ namespace health_calc_pack_dotnet
 {
     public class MacroNutrientes : IMacroNutrientes
     {
-        public MacroNutrientesModel CalcularMacroNutrientes(ObjetivoFisico ObjetivoFisico, double Peso)
+        public MacroNutrientesModel CalculateMacroNutrientes(ObjetivoFisico ObjetivoFisico, double Peso)
         {
             if (ObjetivoFisico == ObjetivoFisico.PerderPeso)
             {

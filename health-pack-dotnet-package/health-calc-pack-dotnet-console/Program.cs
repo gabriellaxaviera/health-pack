@@ -10,8 +10,8 @@ Console.WriteLine($"Seu IMC é: {result} e o resultado é: {classificacao}");
 
 var macro = new MacroNutrientes();
 
-var resultToPerderPeso = macro.getResultForMacros(macro.CalcularMacroNutrientes(ObjetivoFisico.PerderPeso, 86.0));
-var resultToManterPeso = macro.getResultForMacros(macro.CalcularMacroNutrientes(ObjetivoFisico.ManterPeso, 86.0));
-var resultToGanharPeso = macro.getResultForMacros(macro.CalcularMacroNutrientes(ObjetivoFisico.GanharPeso, 86.0));
+var resultToPerderPeso = macro.getResultForMacros(macro.CalculateMacroNutrientes(ObjetivoFisico.PerderPeso, 86.0));
+var resultToManterPeso = macro.getResultForMacros(macro.CalculateMacroNutrientes(ObjetivoFisico.ManterPeso, 86.0));
+var resultToGanharPeso = macro.getResultForMacros(macro.CalculateMacroNutrientes(ObjetivoFisico.GanharPeso, 86.0));
 
 Console.WriteLine($"Para ganhar peso seus macros são: {resultToGanharPeso} \nPara manter peso seus macros são: {resultToManterPeso} \n Para perder peso seus macros são: {resultToPerderPeso}");
