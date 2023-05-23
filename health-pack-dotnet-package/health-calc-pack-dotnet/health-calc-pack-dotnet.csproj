@@ -5,6 +5,17 @@
     <RootNamespace>health_calc_pack_dotnet</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Title>calculadora_imc_macros</Title>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Authors>gabriella-sharley-braitner</Authors>
+    <PackageId>healthCalcPackage</PackageId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
